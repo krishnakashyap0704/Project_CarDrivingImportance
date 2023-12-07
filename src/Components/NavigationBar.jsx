@@ -1,4 +1,5 @@
 import { Col, Container, Form, Nav, NavDropdown, Navbar, Row } from "react-bootstrap";
+import logo from "./Image/logo.png";
 
 export function NavigationBar() {
     return (
@@ -7,11 +8,11 @@ export function NavigationBar() {
                 <Navbar.Brand href="#home">
                     <img
                         alt=""
-                        src="./Image/logo.png"
-                        width="30"
-                        height="30"
+                        src={logo}
+                        width="45"
+                        height="40"
                         className="d-inline-block align-top"
-                    />{' '}RTO</Navbar.Brand>
+                    />{' '}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
