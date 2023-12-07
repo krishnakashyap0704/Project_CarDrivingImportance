@@ -60,7 +60,7 @@ export function NavigationBar() {
                         <Nav.Link href="#Sitemap">Sitemap</Nav.Link>
                         <Nav.Link href="#Contactus">Contact Us</Nav.Link>
                         <NavDropdown title="Login" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/5.1">Sign In</NavDropdown.Item>
+                            <NavDropdown.Item href="/Login">Sign In</NavDropdown.Item>
                             <NavDropdown.Item href="#action/5.2">Registration</NavDropdown.Item>
                             <NavDropdown.Item href="#action/5.3">Support</NavDropdown.Item>
                         </NavDropdown>
