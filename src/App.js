@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { NavigationBar} from './Components/NavigationBar';
 import { Footer } from './Components/Footer';
 import { Login } from './Components/Login';
+import RTORegistrationForm from './Components/RTORegistrationForm';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <NavigationBar></NavigationBar>
     <Routes>
       <Route path='/Login' element={<Login/>}></Route>
+      <Route path='/RTORegistrationForm' element={<RTORegistrationForm/>}></Route>
     </Routes>
     <Footer></Footer>
     </BrowserRouter>

@@ -61,7 +61,7 @@ export function NavigationBar() {
                         <Nav.Link href="#Contactus">Contact Us</Nav.Link>
                         <NavDropdown title="Login" id="basic-nav-dropdown">
                             <NavDropdown.Item href="/Login">Sign In</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/5.2">Registration</NavDropdown.Item>
+                            <NavDropdown.Item href="/RTORegistrationForm">Registration</NavDropdown.Item>
                             <NavDropdown.Item href="#action/5.3">Support</NavDropdown.Item>
                         </NavDropdown>
                         <Form inline>
