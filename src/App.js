@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { NavigationBar} from './Components/NavigationBar';
 import { Footer } from './Components/Footer';
 import { Login } from './Components/Login';
+import { MyCarousel } from './Components/MyCarousel';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <Routes>
       <Route path='/Login' element={<Login/>}></Route>
     </Routes>
+    <MyCarousel></MyCarousel>
     <Footer></Footer>
     </BrowserRouter>
   );
