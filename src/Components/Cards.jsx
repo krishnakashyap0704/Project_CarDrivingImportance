@@ -69,9 +69,6 @@ export function Cards() {
                 </Row>
             </Container>
 
-
-
-
         </div>
 
     );
