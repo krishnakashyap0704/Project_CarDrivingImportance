@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { NavigationBar} from './Components/NavigationBar';
 import { Footer } from './Components/Footer';
 import { Login } from './Components/Login';
+import { Cards } from './Components/Cards';
 import { MyCarousel } from './Components/MyCarousel';
 import RTORegistrationForm from './Components/RTORegistrationForm';
 
@@ -15,6 +16,7 @@ function App() {
       <Route path='/Login' element={<Login/>}></Route>
       <Route path='/RTORegistrationForm' element={<RTORegistrationForm/>}></Route>
     </Routes>
+    <Cards></Cards>
     <MyCarousel></MyCarousel>
     <Footer></Footer>
     </BrowserRouter>

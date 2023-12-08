@@ -19,7 +19,7 @@ export function NavigationBar() {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="#home">About Us</Nav.Link>
-                        <NavDropdown title="Online Services" id="basic-nav-dropdown">
+                        <NavDropdown title="Services" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/1.1">Vechile Related Service</NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.2">Permit Related Service</NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.3">Driving Licence</NavDropdown.Item>
@@ -27,8 +27,8 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/1.5">Fancy Number Booking</NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.6">NR Services</NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.7">National Permit Authorization</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.8">PUCC</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.9">eChallan</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/1.8">PUC</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/1.9">e-Challan</NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.10">Vehicle Scrapping</NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.11">Vechile Fitness Testing</NavDropdown.Item>
                         </NavDropdown>
@@ -55,7 +55,7 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/3.9">PUCC Dashboard</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="External Links" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/4.1">Delhi Traffic Police (Notice)</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/4.1">Maharashtra Traffic Police (Notice)</NavDropdown.Item>
                             <NavDropdown.Item href="#action/4.2">MoRTH</NavDropdown.Item>
                             <NavDropdown.Item href="#action/4.3">National Informatics Centre</NavDropdown.Item>
                         </NavDropdown>
