@@ -5,6 +5,7 @@ import { NavigationBar} from './Components/NavigationBar';
 import { Footer } from './Components/Footer';
 import { Login } from './Components/Login';
 import { MyCarousel } from './Components/MyCarousel';
+import RTORegistrationForm from './Components/RTORegistrationForm';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
     <NavigationBar></NavigationBar>
     <Routes>
       <Route path='/Login' element={<Login/>}></Route>
+      <Route path='/RTORegistrationForm' element={<RTORegistrationForm/>}></Route>
     </Routes>
     <MyCarousel></MyCarousel>
     <Footer></Footer>

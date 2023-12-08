@@ -1,5 +1,7 @@
 import { Col, Container, Form, Nav, NavDropdown, Navbar, Row } from "react-bootstrap";
+
 import logo from "./Image/logo.png";
+import { LinkContainer } from "react-router-bootstrap";
 
 export function NavigationBar() {
     return (
@@ -60,8 +62,8 @@ export function NavigationBar() {
                         <Nav.Link href="#Sitemap">Sitemap</Nav.Link>
                         <Nav.Link href="#Contactus">Contact Us</Nav.Link>
                         <NavDropdown title="Login" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="/Login">Sign In</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/5.2">Registration</NavDropdown.Item>
+                            <LinkContainer to="/Login"><NavDropdown.Item >Sign In</NavDropdown.Item></LinkContainer>
+                            <NavDropdown.Item href="/RTORegistrationForm">Registration</NavDropdown.Item>
                             <NavDropdown.Item href="#action/5.3">Support</NavDropdown.Item>
                         </NavDropdown>
                         <Form inline>
