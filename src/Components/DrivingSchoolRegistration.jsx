@@ -129,7 +129,7 @@ export function DrivingSchoolRegistration(){
         </Form.Group>
 
         <Form.Group controlId='course' className="mb-2">
-          <Form.Label>Gender</Form.Label>
+          <Form.Label>Course</Form.Label>
           <Form.Check
             type="radio"
             label="Basic"
