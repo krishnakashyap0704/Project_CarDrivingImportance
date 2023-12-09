@@ -1,19 +1,21 @@
 import { Col, Container, Form, Nav, NavDropdown, Navbar, Row } from "react-bootstrap";
 
-import DS from "./Image/DS.png";
+import HTP from "./Image/HTP.png";
 import { LinkContainer } from "react-router-bootstrap";
+import './style.css';
 
 export function NavigationBar() {
     return (
-        <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary">
+        <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary class1">
+            {/* //  <Navbar expand="lg" className="bg-body-tertiary class2"> */}
             <Container>
                 <Navbar.Brand href="#home">
                     <img
                         alt=""
-                        src={DS}
-                        width="70"
-                        height="60"
-                        className="d-inline-block align-top"
+                        src={HTP}
+                        width="200"
+                        height="100"
+                        className="d-inline-block align-top class3"
                     />{' '}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
