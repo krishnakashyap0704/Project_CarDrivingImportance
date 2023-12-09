@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
+import { saveStudent } from '../Services/DrivingSchoolServices';
 
-export function DrivingSchoolRegistraction(){
+export function DrivingSchoolRegistration(){
     const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
-        dateOfBirth :'',
-        gender :'',
-        contact :'',
-        email :'',
-        license :'',
-        course :'',
-        drivingexperience :''
-
-        // Add more fields as needed
+        firstName:"",
+        lastName: "",
+        dateOfBirth:"",
+        gender:"",
+        contact:"",
+        email:"",
+        license:"",
+        course:"",
+        drivingexperience:""
       });
     
       const handleChange = (e) => {
@@ -24,10 +23,14 @@ export function DrivingSchoolRegistraction(){
         }));
       };
     
-      const handleSubmit = (e) => {
+      const handleSubmit = async(e) => {
         e.preventDefault();
-        // Add your form submission logic here
-        console.log('Form submitted:', formData);
+        try{
+          const response = await saveStudent(formData);
+          console.log(response);
+        }catch(error){
+          console.log(error);
+        }
       };
     
     return(
@@ -105,7 +108,7 @@ export function DrivingSchoolRegistraction(){
         <Form.Group controlId="email" className="mb-2">
           <Form.Label>Email ID</Form.Label>
           <Form.Control
-            type="email"
+            type="text"
             placeholder="Enter your Email ID"
             name="email"
             value={formData.email}

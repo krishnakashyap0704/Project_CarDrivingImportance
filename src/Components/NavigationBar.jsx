@@ -1,6 +1,6 @@
 import { Col, Container, Form, Nav, NavDropdown, Navbar, Row } from "react-bootstrap";
 
-import logo from "./Image/logo.png";
+import DS from "./Image/DS.png";
 import { LinkContainer } from "react-router-bootstrap";
 
 export function NavigationBar() {
@@ -10,9 +10,9 @@ export function NavigationBar() {
                 <Navbar.Brand href="#home">
                     <img
                         alt=""
-                        src={logo}
-                        width="45"
-                        height="40"
+                        src={DS}
+                        width="70"
+                        height="60"
                         className="d-inline-block align-top"
                     />{' '}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -20,16 +20,16 @@ export function NavigationBar() {
                     <Nav className="me-auto">
                         <Nav.Link href="#home">About Us</Nav.Link>
                         <NavDropdown title="Services" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/1.1">Vechile Related Service</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.2">Permit Related Service</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.3">Driving Licence</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.4">Check Post Tax</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.5">Fancy Number Booking</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.6">NR Services</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.7">National Permit Authorization</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/1.1">Learner License</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/1.2">Driving License</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/1.3">Licence Renewal</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/1.4">duplicate License</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/1.5">choice Number</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/1.6">Green Tax </NavDropdown.Item>
+                            <NavDropdown.Item href="#action/1.7">International Driving license </NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.8">PUC</NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.9">e-Challan</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.10">Vehicle Scrapping</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/1.10">Vehicle Transfer</NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.11">Vechile Fitness Testing</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Informational Services" id="basic-nav-dropdown">
@@ -43,7 +43,7 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/2.8">Notification And Advisories</NavDropdown.Item>
                             <NavDropdown.Item href="#action/2.9">Downloadable Forms</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="Dashboard & Report" id="basic-nav-dropdown">
+                        <NavDropdown title="Courses" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Analytics</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Vahan Report</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Sarathi Report</NavDropdown.Item>
@@ -54,12 +54,12 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/3.8">Trade Certificate Report</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.9">PUCC Dashboard</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="External Links" id="basic-nav-dropdown">
+                        <NavDropdown title="Mock LLR test" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/4.1">Maharashtra Traffic Police (Notice)</NavDropdown.Item>
                             <NavDropdown.Item href="#action/4.2">MoRTH</NavDropdown.Item>
                             <NavDropdown.Item href="#action/4.3">National Informatics Centre</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#Sitemap">Sitemap</Nav.Link>
+                        <Nav.Link href="#Schoollocator">School Locater</Nav.Link>
                         <Nav.Link href="#Contactus">Contact Us</Nav.Link>
                         <NavDropdown title="Login" id="basic-nav-dropdown">
                             <LinkContainer to="/Login"><NavDropdown.Item >Sign In</NavDropdown.Item></LinkContainer>
