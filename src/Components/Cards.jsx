@@ -3,6 +3,10 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import drivinglesson from "./Image/drivinglesson.jpg";
+import donot from "./Image/donot.jpg";
+import international from "./Image/international.jpg";
+import learner from "./Image/learner.jpg";
 
 export function Cards() {
     return (
@@ -11,12 +15,12 @@ export function Cards() {
             <h3 className="text-center">License Related Information</h3>
             <p className="text-center">Various services related to new/old driving licence or learner's licence like Appointment Booking, Duplicate driving licence, Application Status, Online test for learner's licence, etc.</p>
             <Container>
-                <h1>Essential Driving Tips</h1>
+                <h1>ESSENTIAL DRIVING TIPS</h1>
                 
                 <Row className="justify-content-md-center">
                     <Col lg={3}>
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img  src=".\src\Image\Cards\card1.png" />
+                            <Card.Img  src={drivinglesson} />
                             <Card.Body>
                                 <Card.Title>DON'T SKIP THESE DRIVING TIPS</Card.Title>
                                 <Card.Text>
@@ -29,7 +33,7 @@ export function Cards() {
                     </Col>
                     <Col lg={3}>
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                            <Card.Img src={donot}/>
                             <Card.Body>
                                 <Card.Title>IT'S TIME TO ERASE COMMON DRIVING MISTAKES</Card.Title>
                                 <Card.Text>
@@ -42,7 +46,7 @@ export function Cards() {
                     </Col>
                     <Col lg={3}>
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img src={international}/>
                             <Card.Body>
                                 <Card.Title>LEARN HOW TO HOLD A INTERNATIONAL DRIVING LICENSE</Card.Title>
                                 <Card.Text>
@@ -55,7 +59,7 @@ export function Cards() {
                     </Col>
                     <Col lg={3}>
                         <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img src={learner}/>
                             <Card.Body>
                                 <Card.Title>MOCK LEARNER LICENSE TEST</Card.Title>
                                 <Card.Text>

@@ -43,7 +43,7 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/2.8">Notification And Advisories</NavDropdown.Item>
                             <NavDropdown.Item href="#action/2.9">Downloadable Forms</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="Dashboard & Report" id="basic-nav-dropdown">
+                        <NavDropdown title="Courses" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Analytics</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Vahan Report</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.3">Sarathi Report</NavDropdown.Item>
@@ -54,12 +54,12 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/3.8">Trade Certificate Report</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.9">PUCC Dashboard</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="External Links" id="basic-nav-dropdown">
+                        <NavDropdown title="Mock LLR test" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/4.1">Maharashtra Traffic Police (Notice)</NavDropdown.Item>
                             <NavDropdown.Item href="#action/4.2">MoRTH</NavDropdown.Item>
                             <NavDropdown.Item href="#action/4.3">National Informatics Centre</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#Sitemap">Sitemap</Nav.Link>
+                        <Nav.Link href="#Schoollocator">School Locater</Nav.Link>
                         <Nav.Link href="#Contactus">Contact Us</Nav.Link>
                         <NavDropdown title="Login" id="basic-nav-dropdown">
                             <LinkContainer to="/Login"><NavDropdown.Item >Sign In</NavDropdown.Item></LinkContainer>
