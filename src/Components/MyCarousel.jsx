@@ -3,29 +3,63 @@ import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import carousel1 from "./Image/carousel1.jpg";
 import carousel2 from "./Image/carousel2.jpg";
+import carousel3 from "./Image/carousel3.jpg";
+import carousel4 from "./Image/carousel4.jpg";
+import carousel5 from "./Image/carousel5.jpg";
+import carousel6 from "./Image/carousel5.jpg";
 
 export function MyCarousel() {
     return (
         <div style={{ marginTop: '20px', marginBottom: '20px' }}>
         <Carousel>
-            <Carousel.Item>
+        <Carousel.Item>
                 <img
                     className="d-block mx-auto" // Center the image
-                    style={{ maxWidth: '70%' }} // Set a maximum width for the image
+                    style={{maxHeight : '500px' }}
                     src={carousel1}
                     alt="First slide"
                 />
 
             </Carousel.Item>
+
             <Carousel.Item>
                 <img
                     className="d-block mx-auto" // Center the image
-                    style={{ maxWidth: '70%' }} // Set a maximum width for the image
+                    style={{maxHeight : '500px' }}
                     src={carousel2}
                     alt="Second slide"
                 />
 
             </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block mx-auto" // Center the image
+                    style={{maxHeight : '500px' }}
+                    src={carousel3}
+                    alt="Third slide"
+                />
+
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block mx-auto" // Center the image
+                    style={{maxHeight : '500px' }}
+                    src={carousel2}
+                    alt="Fourth slide"
+                />
+
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block mx-auto" // Center the image
+                    style={{maxHeight : '500px' }}
+                    src={carousel3}
+                    alt="Fifth slide"
+                />
+
+            </Carousel.Item>
+      
+
 
             
 
