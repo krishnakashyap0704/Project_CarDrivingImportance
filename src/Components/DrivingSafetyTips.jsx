@@ -6,7 +6,7 @@ import './style.css'
 export function DrivingSafetyTips() {
   return (
     <Container>
-      <h3 className="text-center" >Driving Safety Tips</h3>
+      <h4 className="text-center mt-5" >DRIVING SAFETY TIPS</h4>
       
       <Row className="justify-content-between" >
        
