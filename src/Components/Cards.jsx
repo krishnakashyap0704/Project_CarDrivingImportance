@@ -12,8 +12,7 @@ export function Cards() {
     return (
 
         <div>
-            <h3 className="text-center">License Related Information</h3>
-            <p className="text-center">Various services related to new/old driving licence or learner's licence like Appointment Booking, Duplicate driving licence, Application Status, Online test for learner's licence, etc.</p>
+            
             <Container>
                 <h1>ESSENTIAL DRIVING TIPS</h1>
                 
