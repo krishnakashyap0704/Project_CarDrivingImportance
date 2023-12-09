@@ -12,7 +12,8 @@ export function DrivingSchoolCourses() {
     return (
 
         <div className="mt-4 mb-4">
- 
+            <h4 className="text-center">CHOOSE YOUR COURSE TO DRIVE WITH CONFIDENCE ON THE ROAD</h4>
+            <p className="text-center">Our meticulously designed courses help transform beginners into skilled and confident drivers. Choose your desired course from a range of driving training courses and master the skill of driving</p>
             <Container>
      
                 <Row className="justify-content-md-center">
