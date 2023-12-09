@@ -24,10 +24,10 @@ export function Cards() {
                             <Card.Body>
                                 <Card.Title>DON'T SKIP THESE DRIVING TIPS</Card.Title>
                                 <Card.Text>
-                               10 Practices that make you a safer Driver
-                               </Card.Text>
-                               <p>Although the 2020 lockdown resulted in a 49.47% fall in the number of lives lost in road accidents</p>
-                               {/* <Button variant="primary">More</Button> */}
+                                    10 Practices that make you a safer Driver
+                                </Card.Text>
+                                <p>Although the 2020 lockdown resulted in a 49.47% fall in the number of lives lost in road accidents</p>
+                                {/* <Button variant="primary">More</Button> */}
                             </Card.Body>
                         </Card>
                     </Col>
@@ -37,7 +37,7 @@ export function Cards() {
                             <Card.Body>
                                 <Card.Title>IT'S TIME TO ERASE COMMON DRIVING MISTAKES</Card.Title>
                                 <Card.Text>
-                                Mistakes that most people make while driving
+                                    Mistakes that most people make while driving
                                 </Card.Text>
                                 <p>We must admit that each and every one of us is guilty of making errors while driving.</p>
                                 {/* <Button variant="primary">More</Button> */}
@@ -50,7 +50,7 @@ export function Cards() {
                             <Card.Body>
                                 <Card.Title>LEARN HOW TO HOLD A INTERNATIONAL DRIVING LICENSE</Card.Title>
                                 <Card.Text>
-                                International Driving License: Here's What You Need to Know
+                                    International Driving License: Here's What You Need to Know
                                 </Card.Text>
                                 <p>Whether for travelling and exploring or work purposes, there may be times when you have to get behind the wheel in a foriegn country.</p>
                                 {/* <Button variant="primary">More</Button> */}
@@ -63,7 +63,7 @@ export function Cards() {
                             <Card.Body>
                                 <Card.Title>MOCK LEARNER LICENSE TEST</Card.Title>
                                 <Card.Text>
-                                Explore the plethora of Questions in Learner License
+                                    Explore the plethora of Questions in Learner License
                                 </Card.Text>
                                 <p>To 'Clear' the learners license test you must know the traffic signs and traffic rules  </p>
                                 {/* <Button variant="primary">More</Button> */}
