@@ -22,7 +22,7 @@ function App() {
     <Routes>
       <Route path='/Login' element={<Login/>}></Route>
       <Route path='/RTORegistrationForm' element={<RTORegistrationForm/>}></Route>
-      <Route path='/DrivingSchoolRegistration' element={<DrivingSchoolRegistration/>}></Route>
+      <Route path='/DrivingSchoolCollection' element={<DrivingSchoolRegistration/>}></Route>
     </Routes>
     <Cards></Cards>
  

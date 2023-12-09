@@ -3,7 +3,7 @@ import axios from "axios";
 
 export async function saveStudent(formData){
     try{
-        const response =await axios.post("http://127.0.0.1:4100/DrivingSchoolRegistration", formData);
+        const response =await axios.post("http://127.0.0.1:4100/DrivingSchoolCollection", formData);
         console.log(response);
     }catch(error){
         console.log(error);

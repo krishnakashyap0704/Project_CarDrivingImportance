@@ -30,7 +30,7 @@ export function DrivingSchoolCourses() {
                                
                                     <div>Fees : Rs.5500</div>
                                     
-                                <Button variant="primary" className='mt-3' href='/DrivingSchoolRegistration'>Enroll Now</Button>
+                                <Button variant="primary" className='mt-3' href='/DrivingSchoolCollection'>Enroll Now</Button>
 
 
 
@@ -49,7 +49,7 @@ export function DrivingSchoolCourses() {
                                 <div>Number of Hours   : 16</div>
                                 <div>Fees : Rs.9000</div>
                                 
-                                <Button variant="primary"  className='mt-3' href='/DrivingSchoolRegistration'>Enroll Now</Button>
+                                <Button variant="primary"  className='mt-3' href='/DrivingSchoolCollection'>Enroll Now</Button>
                                
                             </Card.Body>
                         </Card>
@@ -66,7 +66,7 @@ export function DrivingSchoolCourses() {
                                 <div>Number of Hours    : 12</div>
                                 <div>Fees : Rs.7500</div>
 
-                                <Button variant="primary"  className='mt-3' href='/DrivingSchoolRegistration'>Enroll Now</Button>
+                                <Button variant="primary"  className='mt-3' href='/DrivingSchoolCollection'>Enroll Now</Button>
                             </Card.Body>
                         </Card>
                     </Col>
