@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
+import { savePerson } from '../Services/LicenceService';
 
 const RTORegistrationForm = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    licenseNumber: '',
-    vehicleNumber: '',
-    phoneNumber: '',
-    email: '',
-    city: '',
-    state: '',
-
-    // Add more fields as needed
+    firstName:"",
+    lastName:"",
+    dateOfBirth:"",
+    gender:"",
+    phoneNumber:"",
+    address:"",
+    email:"",
+    vehicleNumber:"",
+    model:"",
+    vehicleType:""
   });
 
   const handleChange = (e) => {
@@ -23,10 +24,14 @@ const RTORegistrationForm = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
-    // Add your form submission logic here
-    console.log('Form submitted:', formData);
+    try{
+      const response = await savePerson(formData);
+      console.log(response);
+    }catch(error){
+      console.log(error);
+    }
   };
 
   return (
@@ -89,13 +94,13 @@ const RTORegistrationForm = () => {
         </Form.Group>
 
         <h4 className="mt-4">Contact Information</h4>
-        <Form.Group controlId="phone" className="mb-2">
+        <Form.Group controlId="phoneNumber" className="mb-2">
           <Form.Label>Mobile Number</Form.Label>
           <Form.Control
             type="number"
             placeholder="Enter your mobile number"
-            name="phone"
-            value={formData.phone}
+            name="phoneNumber"
+            value={formData.phoneNumber}
             onChange={handleChange}
             required
           />
@@ -116,7 +121,7 @@ const RTORegistrationForm = () => {
         <Form.Group controlId="email" className="mb-2">
           <Form.Label>Email Address</Form.Label>
           <Form.Control
-            type="email"
+            type="text"
             placeholder="Enter your Email Address"
             name="email"
             value={formData.email}

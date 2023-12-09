@@ -9,9 +9,7 @@ import { MyCarousel } from './Components/MyCarousel';
 import RTORegistrationForm from './Components/RTORegistrationForm';
 import { DrivingSafetyTips } from './Components/DrivingSafetyTips';
 import { DrivingSchoolCourses } from './Components/DrivingSchoolCourses';
-
-
-
+import { DrivingSchoolRegistration } from './Components/DrivingSchoolRegistration';
 
 
 function App() {
@@ -19,10 +17,11 @@ function App() {
     <BrowserRouter>
     <NavigationBar></NavigationBar>
     <MyCarousel></MyCarousel>
-   <DrivingSchoolCourses></DrivingSchoolCourses>
+    <DrivingSchoolCourses></DrivingSchoolCourses>
     <Routes>
       <Route path='/Login' element={<Login/>}></Route>
       <Route path='/RTORegistrationForm' element={<RTORegistrationForm/>}></Route>
+      <Route path='/DrivingSchoolRegistration' element={<DrivingSchoolRegistration/>}></Route>
     </Routes>
     <Cards></Cards>
  
