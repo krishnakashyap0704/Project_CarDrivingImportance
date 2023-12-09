@@ -3,10 +3,10 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import drivinglesson from "./Image/drivinglesson.jpg";
-import donot from "./Image/donot.jpg";
-import learner from "./Image/learner.jpg";
-import interDS from "./Image/interDS.png";
+import card1 from "./Image/card1.jpg";
+import card2 from "./Image/card2.jpg";
+import card4 from "./Image/card4.jpg";
+import card3 from "./Image/card3.png";
 
 
 export function Cards() {
@@ -14,13 +14,13 @@ export function Cards() {
 
         <div>
             
-            <Container>
-                <h1>ESSENTIAL DRIVING TIPS</h1>
+            <Container className='class1'>
+                <h4 className="text-center mb-4 mt-5">ESSENTIAL DRIVING TIPS</h4>
                 
                 <Row className="justify-content-md-center">
                     <Col lg={3}>
                         <Card style={{ width: '18rem', height:'30rem' }}>
-                            <Card.Img  src={drivinglesson} width="100" height="180"/>
+                            <Card.Img  src={card1} width="100" height="180"/>
                             <Card.Body>
                                 <Card.Title>DON'T SKIP THESE DRIVING TIPS</Card.Title>
                                 <Card.Text>
@@ -33,7 +33,7 @@ export function Cards() {
                     </Col>
                     <Col lg={3}>
                         <Card style={{ width: '18rem', height:'30rem' }}>
-                            <Card.Img src={donot} width="100" height="180"/>
+                            <Card.Img src={card2} width="100" height="180"/>
                             <Card.Body>
                                 <Card.Title>IT'S TIME TO ERASE COMMON DRIVING MISTAKES</Card.Title>
                                 <Card.Text>
@@ -46,7 +46,7 @@ export function Cards() {
                     </Col>
                     <Col lg={3}>
                         <Card style={{ width: '18rem', height:'30rem' }}>
-                        <Card.Img src={interDS} width="100" height="180"/>
+                        <Card.Img src={card3} width="100" height="180"/>
                             <Card.Body>
                                 <Card.Title>LEARN HOW TO HOLD A INTERNATIONAL DRIVING LICENSE</Card.Title>
                                 <Card.Text>
@@ -59,7 +59,7 @@ export function Cards() {
                     </Col>
                     <Col lg={3}>
                         <Card style={{ width: '18rem', height:'30rem' }}>
-                        <Card.Img src={learner} width="100" height="180"/>
+                        <Card.Img src={card4} width="100" height="180"/>
                             <Card.Body>
                                 <Card.Title>MOCK LEARNER LICENSE TEST</Card.Title>
                                 <Card.Text>
