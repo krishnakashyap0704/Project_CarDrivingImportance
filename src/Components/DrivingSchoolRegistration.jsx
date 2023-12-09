@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
-import { saveStudent } from '../Services/DrivingSchoolServices';
+import { saveStudent } from '../Services/DrivindSchoolServices';
 
 export function DrivingSchoolRegistration(){
     const [formData, setFormData] = useState({
