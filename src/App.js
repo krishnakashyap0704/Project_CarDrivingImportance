@@ -9,6 +9,7 @@ import { MyCarousel } from './Components/MyCarousel';
 import RTORegistrationForm from './Components/RTORegistrationForm';
 import { DrivingSafetyTips } from './Components/DrivingSafetyTips';
 import { DrivingSchoolCourses } from './Components/DrivingSchoolCourses';
+import { TrafficSigns } from './Components/TrafficSigns';
 import { DrivingSchoolRegistration } from './Components/DrivingSchoolRegistration';
 
 
@@ -26,7 +27,7 @@ function App() {
     <Cards></Cards>
  
     <DrivingSafetyTips></DrivingSafetyTips>
-    
+    <TrafficSigns></TrafficSigns>
     <Footer></Footer>
     </BrowserRouter>
   );

@@ -6,7 +6,7 @@ import carousel2 from "./Image/carousel2.jpg";
 import carousel3 from "./Image/carousel3.jpg";
 import carousel4 from "./Image/carousel4.jpg";
 import carousel5 from "./Image/carousel5.jpg";
-import carousel6 from "./Image/carousel5.jpg";
+
 
 export function MyCarousel() {
     return (
@@ -44,7 +44,7 @@ export function MyCarousel() {
                 <img
                     className="d-block mx-auto" // Center the image
                     style={{maxHeight : '500px' }}
-                    src={carousel2}
+                    src={carousel4}
                     alt="Fourth slide"
                 />
 
@@ -53,7 +53,7 @@ export function MyCarousel() {
                 <img
                     className="d-block mx-auto" // Center the image
                     style={{maxHeight : '500px' }}
-                    src={carousel3}
+                    src={carousel5}
                     alt="Fifth slide"
                 />
 
