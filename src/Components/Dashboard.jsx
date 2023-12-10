@@ -8,11 +8,11 @@ import './style.css'
 export function Dashboard(){
     return(
         <>
-        <MyCarousel></MyCarousel>
-        <DrivingSchoolCourses></DrivingSchoolCourses>
-        <Cards></Cards>
-        <DrivingSafetyTips></DrivingSafetyTips>
-        <TrafficSigns></TrafficSigns>
+        <MyCarousel></MyCarousel><br/>
+        <DrivingSchoolCourses></DrivingSchoolCourses><br/>
+        <Cards></Cards><br/>
+        <DrivingSafetyTips></DrivingSafetyTips><br/>
+        <TrafficSigns></TrafficSigns><br/>
         </>
     );
 }

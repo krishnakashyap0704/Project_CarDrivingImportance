@@ -59,7 +59,7 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/4.2">MoRTH</NavDropdown.Item>
                             <NavDropdown.Item href="#action/4.3">National Informatics Centre</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#Schoollocator">School Locater</Nav.Link>
+                        <Nav.Link href="https://rb.gy/izd9ha">School Locater</Nav.Link>
                         <Nav.Link href="#Contactus">Contact Us</Nav.Link>
                         <NavDropdown title="Login" id="basic-nav-dropdown">
                             <LinkContainer to="/Login"><NavDropdown.Item >Sign In</NavDropdown.Item></LinkContainer>

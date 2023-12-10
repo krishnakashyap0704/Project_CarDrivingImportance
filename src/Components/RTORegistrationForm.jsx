@@ -1,20 +1,22 @@
 import React, { useState } from 'react';
-import { Container, Form, Button } from 'react-bootstrap';
+import { Container, Form, Button, Row, Col, Alert } from 'react-bootstrap';
 import { savePerson } from '../Services/LicenceService';
 
 export const RTORegistrationForm = () => {
   const [formData, setFormData] = useState({
-    firstName:"",
-    lastName:"",
-    dateOfBirth:"",
-    gender:"",
-    phoneNumber:"",
-    address:"",
-    email:"",
-    vehicleNumber:"",
-    model:"",
-    vehicleType:""
+    firstName: "",
+    lastName: "",
+    dateOfBirth: "",
+    gender: "",
+    phoneNumber: "",
+    address: "",
+    email: "",
+    vehicleNumber: "",
+    model: "",
+    vehicleType: ""
   });
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,12 +26,28 @@ export const RTORegistrationForm = () => {
     }));
   };
 
-  const handleSubmit = async(e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    try{
+    try {
       const response = await savePerson(formData);
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 2000);
       console.log(response);
-    }catch(error){
+      setFormData({
+        firstName: "",
+        lastName: "",
+        dateOfBirth: "",
+        gender: "",
+        phoneNumber: "",
+        address: "",
+        email: "",
+        vehicleNumber: "",
+        model: "",
+        vehicleType: ""
+      });
+    } catch (error) {
       console.log(error);
     }
   };
@@ -186,6 +204,11 @@ export const RTORegistrationForm = () => {
         <Button variant="primary" type="submit">
           Submit
         </Button>
+        <Row className="mt-3">
+          <Col lg={4}>
+            {isSubmitted ? <Alert variant="success">Registration Successful</Alert> : null}
+          </Col>
+        </Row>
       </Form>
     </Container>
   );

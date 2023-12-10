@@ -1,43 +1,60 @@
 import React, { useState } from 'react';
-import { Container, Form, Button } from 'react-bootstrap';
+import { Container, Form, Button, Row, Col, Alert } from 'react-bootstrap';
 import { saveStudent } from '../Services/DrivingSchoolServices';
 
-export function DrivingSchoolRegistration(){
-    const [formData, setFormData] = useState({
-        firstName:"",
+export function DrivingSchoolRegistration() {
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+    dateOfBirth: "",
+    gender: "",
+    contact: "",
+    email: "",
+    license: "",
+    course: "",
+    drivingexperience: ""
+  });
+
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await saveStudent(formData);
+      setIsSubmitted(true);
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 2000);
+      console.log(response);
+      setFormData({
+        firstName: "",
         lastName: "",
-        dateOfBirth:"",
-        gender:"",
-        contact:"",
-        email:"",
-        license:"",
-        course:"",
-        drivingexperience:""
+        dateOfBirth: "",
+        gender: "",
+        contact: "",
+        email: "",
+        license: "",
+        course: "",
+        drivingexperience: ""
       });
-    
-      const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData((prevData) => ({
-          ...prevData,
-          [name]: value,
-        }));
-      };
-    
-      const handleSubmit = async(e) => {
-        e.preventDefault();
-        try{
-          const response = await saveStudent(formData);
-          console.log(response);
-        }catch(error){
-          console.log(error);
-        }
-      };
-    
-    return(
-        <Container className="mt-5 mb-5">
-        <h2>Driving School Registration</h2>
-        <Form onSubmit={handleSubmit} >
-       
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  return (
+    <Container className="mt-5 mb-5">
+      <h2>Driving School Registration</h2>
+      <Form onSubmit={handleSubmit} >
+
         <Form.Group controlId="firstName" className="mb-2">
           <Form.Label>First Name</Form.Label>
           <Form.Control
@@ -104,7 +121,7 @@ export function DrivingSchoolRegistration(){
           />
         </Form.Group>
 
-        
+
         <Form.Group controlId="email" className="mb-2">
           <Form.Label>Email ID</Form.Label>
           <Form.Control
@@ -179,6 +196,11 @@ export function DrivingSchoolRegistration(){
           Submit
         </Button>
       </Form>
+      <Row className="mt-3">
+        <Col lg={4}>
+          {isSubmitted ? <Alert variant="success">Registration Successful</Alert> : null}
+        </Col>
+      </Row>
     </Container>
-    );
+  );
 }
