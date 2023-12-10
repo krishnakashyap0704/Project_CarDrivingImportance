@@ -1,24 +1,26 @@
 import { Col, Container, Form, Nav, NavDropdown, Navbar, Row } from "react-bootstrap";
 
-import DS from "./Image/DS.png";
+import HTP from "./Image/HTP.png";
 import { LinkContainer } from "react-router-bootstrap";
+import './style.css'
 
 export function NavigationBar() {
     return (
-        <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary">
+        
+        <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary navbar1">
             <Container>
                 <Navbar.Brand href="#home">
                     <img
                         alt=""
-                        src={DS}
-                        width="70"
-                        height="60"
-                        className="d-inline-block align-top"
+                        src={HTP}
+                        width="200"
+                        height="100"
+                        className="d-inline-block align-top class3"
                     />{' '}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">About Us</Nav.Link>
+                        <Nav.Link href="/AboutUs" >About Us</Nav.Link>
                         <NavDropdown title="Services" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/1.1">Learner License</NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.2">Driving License</NavDropdown.Item>
@@ -32,7 +34,7 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/1.10">Vehicle Transfer</NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.11">Vechile Fitness Testing</NavDropdown.Item>
                         </NavDropdown>
-                        <NavDropdown title="Informational Services" id="basic-nav-dropdown">
+                        {/* <NavDropdown title="Informational Services" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/2.1">Know Your License Details</NavDropdown.Item>
                             <NavDropdown.Item href="#action/2.2">Know Your Vechile Details</NavDropdown.Item>
                             <NavDropdown.Item href="#action/2.3">About Licencing</NavDropdown.Item>
@@ -42,7 +44,7 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/2.7">Fees & User Charges</NavDropdown.Item>
                             <NavDropdown.Item href="#action/2.8">Notification And Advisories</NavDropdown.Item>
                             <NavDropdown.Item href="#action/2.9">Downloadable Forms</NavDropdown.Item>
-                        </NavDropdown>
+                        </NavDropdown> */}
                         <NavDropdown title="Courses" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Analytics</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Vahan Report</NavDropdown.Item>
@@ -59,7 +61,7 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/4.2">MoRTH</NavDropdown.Item>
                             <NavDropdown.Item href="#action/4.3">National Informatics Centre</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="https://rb.gy/izd9ha">School Locater</Nav.Link>
+                        <Nav.Link href="#Schoollocator">School Locater</Nav.Link>
                         <Nav.Link href="#Contactus">Contact Us</Nav.Link>
                         <NavDropdown title="Login" id="basic-nav-dropdown">
                             <LinkContainer to="/Login"><NavDropdown.Item >Sign In</NavDropdown.Item></LinkContainer>

@@ -8,6 +8,8 @@ import { Register } from './Components/Register';
 import { RTORegistrationForm } from './Components/RTORegistrationForm';
 import { DrivingSchoolRegistration } from './Components/DrivingSchoolRegistration';
 import { Dashboard } from './Components/Dashboard';
+import { ContactUs } from './Components/ContactUs';
+import { AboutUs } from './Components/AboutUs';
 
 
 function App() {
@@ -17,7 +19,6 @@ function App() {
     <Routes>
       <Route path='/' element={<Dashboard/>}></Route>
       <Route path='/Login' element={<Login/>}></Route>
-      <Route path='/Register' element={<Register/>}></Route>
       <Route path='/RTORegistrationForm' element={<RTORegistrationForm/>}></Route>
       <Route path='/DrivingSchoolRegistration' element={<DrivingSchoolRegistration/>}></Route>
     </Routes>
