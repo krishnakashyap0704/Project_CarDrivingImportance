@@ -2,10 +2,12 @@ import { Col, Container, Form, Nav, NavDropdown, Navbar, Row } from "react-boots
 
 import DS from "./Image/DS.png";
 import { LinkContainer } from "react-router-bootstrap";
+import './style.css'
 
 export function NavigationBar() {
     return (
-        <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary">
+        
+        <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary navbar1">
             <Container>
                 <Navbar.Brand href="#home">
                     <img
