@@ -1,6 +1,6 @@
 import { Col, Container, Form, Nav, NavDropdown, Navbar, Row } from "react-bootstrap";
 
-import HTP from "./Image/HTP.png";
+import logo from "./Image/Logo.png";
 import { LinkContainer } from "react-router-bootstrap";
 import './style.css'
 
@@ -9,24 +9,22 @@ export function NavigationBar() {
         
         <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary navbar1">
             <Container>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand href="/">
                     <img
                         alt=""
-                        src={HTP}
-                        width="200"
-                        height="100"
+                        src={logo}
+                        width="90"
+                        height="60"
                         className="d-inline-block align-top class3"
-                    />{' '}</Navbar.Brand>
+                    />{'   '}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Link href="/AboutUs" >About Us</Nav.Link>
                         <NavDropdown title="Services" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/1.1">Learner License</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.2">Driving License</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.3">Licence Renewal</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.4">duplicate License</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/1.5">choice Number</NavDropdown.Item>
+                            <NavDropdown.Item href="/RTORegistrationForm">Driving License</NavDropdown.Item>
+                            <NavDropdown.Item href="/RTORegistrationForm">Licence Renewal</NavDropdown.Item>
+                            <NavDropdown.Item href="#action/1.5">Choice Number</NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.6">Green Tax </NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.7">International Driving license </NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.8">PUC</NavDropdown.Item>
@@ -34,17 +32,14 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/1.10">Vehicle Transfer</NavDropdown.Item>
                             <NavDropdown.Item href="#action/1.11">Vechile Fitness Testing</NavDropdown.Item>
                         </NavDropdown>
-                        {/* <NavDropdown title="Informational Services" id="basic-nav-dropdown">
+                        <NavDropdown title="Informational Services" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/2.1">Know Your License Details</NavDropdown.Item>
                             <NavDropdown.Item href="#action/2.2">Know Your Vechile Details</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/2.3">About Licencing</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/2.4">About Registration</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/2.5">About Permits</NavDropdown.Item>
+                            <NavDropdown.Item href="/AboutLicencing">About Licencing</NavDropdown.Item>
+                            <NavDropdown.Item href="/AboutPermit">About Permits</NavDropdown.Item>
                             <NavDropdown.Item href="#action/2.6">Act, Rules and Policies</NavDropdown.Item>
                             <NavDropdown.Item href="#action/2.7">Fees & User Charges</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/2.8">Notification And Advisories</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/2.9">Downloadable Forms</NavDropdown.Item>
-                        </NavDropdown> */}
+                        </NavDropdown>
                         <NavDropdown title="Courses" id="basic-nav-dropdown">
                             <NavDropdown.Item href="#action/3.1">Analytics</NavDropdown.Item>
                             <NavDropdown.Item href="#action/3.2">Vahan Report</NavDropdown.Item>
@@ -61,11 +56,11 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/4.2">MoRTH</NavDropdown.Item>
                             <NavDropdown.Item href="#action/4.3">National Informatics Centre</NavDropdown.Item>
                         </NavDropdown>
-                        <Nav.Link href="#Schoollocator">School Locater</Nav.Link>
-                        <Nav.Link href="#Contactus">Contact Us</Nav.Link>
+                        <Nav.Link href="https://rb.gy/7xpr7u">School Locator</Nav.Link>
+                        <Nav.Link href="/ContactUs">Contact Us</Nav.Link>
                         <NavDropdown title="Login" id="basic-nav-dropdown">
                             <LinkContainer to="/Login"><NavDropdown.Item >Sign In</NavDropdown.Item></LinkContainer>
-                            <NavDropdown.Item href="/RTORegistrationForm">Registration</NavDropdown.Item>
+                            <NavDropdown.Item href="/Register">Register</NavDropdown.Item>
                             <NavDropdown.Item href="#action/5.3">Support</NavDropdown.Item>
                         </NavDropdown>
                         <Form inline>

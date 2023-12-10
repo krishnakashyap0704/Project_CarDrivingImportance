@@ -10,6 +10,8 @@ import { DrivingSchoolRegistration } from './Components/DrivingSchoolRegistratio
 import { Dashboard } from './Components/Dashboard';
 import { ContactUs } from './Components/ContactUs';
 import { AboutUs } from './Components/AboutUs';
+import { AboutLicencing } from './Components/AboutLicencing';
+import { AboutPermit } from './Components/AboutPermit';
 
 
 function App() {
@@ -19,6 +21,11 @@ function App() {
     <Routes>
       <Route path='/' element={<Dashboard/>}></Route>
       <Route path='/Login' element={<Login/>}></Route>
+      <Route path='/Register' element={<Register/>}></Route>
+      <Route path='/ContactUs' element={<ContactUs/>}></Route>
+      <Route path='/AboutUs' element={<AboutUs/>}></Route>
+      <Route path='/AboutPermit' element={<AboutPermit/>}></Route>
+      <Route path='/AboutLicencing' element={<AboutLicencing/>}></Route>
       <Route path='/RTORegistrationForm' element={<RTORegistrationForm/>}></Route>
       <Route path='/DrivingSchoolRegistration' element={<DrivingSchoolRegistration/>}></Route>
     </Routes>

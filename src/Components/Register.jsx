@@ -44,8 +44,8 @@ export function Register() {
 
     return (
         <>
-            <Container>
-                <h1>Sign Up</h1>
+            <Container style={{ marginTop:'40px'}}>
+                <h1 >Sign Up</h1>
                 <Form onSubmit={handleSubmit}>
                     <Form.Group className="mb-3">
                         <Form.Label>Full Name</Form.Label>
@@ -91,7 +91,7 @@ export function Register() {
                     </Form.Group>
                     <Button variant="primary" type="submit">Register</Button>
                 </Form>
-                <Row className="mt-3">
+                <Row className="mt-3 mb-4">
                     <Col lg={4}>
                         {isSubmitted ? <Alert variant="success">Student Registered</Alert> : null}
                     </Col>

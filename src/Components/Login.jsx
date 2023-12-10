@@ -2,8 +2,6 @@ import { Button, Container, Form } from "react-bootstrap";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { LoginProfile } from "../Services/RegistrationApi";
-// import Register from './Image/Register.png' 
-// import { Jwt } from "jsonwebtoken";
 
 export function Login(){
     const navigate=useNavigate();

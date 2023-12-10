@@ -54,7 +54,7 @@ export const RTORegistrationForm = () => {
 
   return (
     <Container className="mt-5 mb-5">
-      <h2>RTO Registration Form</h2>
+      <h2>Driving Licence Registration Form</h2>
       <Form onSubmit={handleSubmit} >
         <h4 className="mt-4">Personal Information</h4>
         <Form.Group controlId="firstName" className="mb-2">
