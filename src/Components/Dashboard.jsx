@@ -9,7 +9,7 @@ export function Dashboard(){
     return(
         <>
         <MyCarousel></MyCarousel><br/>
-        <DrivingSchoolCourses></DrivingSchoolCourses><br/>
+        <DrivingSchoolCourses></DrivingSchoolCourses><br/><br />
         <Cards></Cards><br/>
         <DrivingSafetyTips></DrivingSafetyTips><br/>
         <TrafficSigns></TrafficSigns><br/>

@@ -15,7 +15,7 @@ export function Cards() {
         <div>
             
             <Container>
-                <h1>ESSENTIAL DRIVING TIPS</h1>
+                <h4 className="text-center">ESSENTIAL DRIVING TIPS</h4><br />
                 
                 <Row className="justify-content-md-center">
                     <Col lg={3}>
