@@ -43,13 +43,14 @@ export function TrafficSigns() {
 
             <h4 className="text-center">TRAFFIC SIGNS</h4>
             <Carousel responsive={responsive}>
-                <div className='cl2'><Card >
+                <div className='cl2'>
+                    <Card >
                     <Card.Img variant="top" src={sign1} />
 
 
                 </Card></div>
                 <div className='cl2'>
-                    <Card >
+                    <Card>
                         <Card.Img variant="top" src={sign2} />
 
                     </Card>
@@ -78,7 +79,7 @@ export function TrafficSigns() {
 
                     </Card>
                 </div>
- 
+
                 <div className='cl2'>
                     <Card >
                         <Card.Img variant="top" src={sign7} />

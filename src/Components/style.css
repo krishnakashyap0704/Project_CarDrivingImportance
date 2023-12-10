@@ -11,3 +11,30 @@
     margin-bottom: 50px;
     margin-top: 50px;
 }
+
+ .cus1 {
+    text-align: center;
+    padding: 20px;
+    border: 3px solid rgb(243, 199, 23);
+    width: 400px;
+    margin: 20px auto;
+    border-right: 6px solid rgb(243, 199, 23);
+    border-left: 6px solid rgb(243, 199, 23);
+    background-color: #fff; /* Add a background color */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  }
+  
+  .icon {
+    margin-right: 10px;
+    color: rgb(243, 199, 23); /* Set icon color to match the border color */
+  }
+  
+  /* Add hover effect */
+  .cus1:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+=======
+
