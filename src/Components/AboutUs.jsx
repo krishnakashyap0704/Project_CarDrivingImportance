@@ -1,51 +1,32 @@
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Alert, Col, Container, Row } from "react-bootstrap";
 
 export function AboutUs(){
     return (
-        <div>
-            <Container>
-                <Row>
-                    <Col lg={4}>
-                    <Card>
-                            {/* <Card.Img src={} width="100" height="180"/> */}
-                            <Card.Body>
-                                <Card.Title>IT'S TIME TO ERASE COMMON DRIVING MISTAKES</Card.Title>
-                                <Card.Text>
-                                Mistakes that most people make while driving
-                                </Card.Text>
-                                <p>We must admit that each and every one of us is guilty of making errors while driving.</p>
-                                {/* <Button variant="primary">More</Button> */}
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col lg={4}>
-                    <Card >
-                            {/* <Card.Img src={} width="100" height="180"/> */}
-                            <Card.Body>
-                                <Card.Title>IT'S TIME TO ERASE COMMON DRIVING MISTAKES</Card.Title>
-                                <Card.Text>
-                                Mistakes that most people make while driving
-                                </Card.Text>
-                                <p>We must admit that each and every one of us is guilty of making errors while driving.</p>
-                                {/* <Button variant="primary">More</Button> */}
-                            </Card.Body>
-                        </Card>
-                        </Col>
-                        <Col lg={4}>
-                        <Card >
-                            {/* <Card.Img src={} width="100" height="180"/> */}
-                            <Card.Body>
-                                <Card.Title>IT'S TIME TO ERASE COMMON DRIVING MISTAKES</Card.Title>
-                                <Card.Text>
-                                Mistakes that most people make while driving
-                                </Card.Text>
-                                <p>We must admit that each and every one of us is guilty of making errors while driving.</p>
-                                {/* <Button variant="primary">More</Button> */}
-                            </Card.Body>
-                        </Card>
-                        </Col>
-                </Row>
-            </Container>
-        </div>
+        <div className="mt-4 mb-4">
+        <h4 className="text-center class3"><i></i></h4>
+        <Container>
+        <Alert variant="primary">
+            <h1>About Us</h1>
+        </Alert>
+        <Row>
+            <Col lg={4}>
+            <h3>Tejaswini Maskare</h3>  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut tenetur ea ratione, inventore consectetur eos asperiores quos, error dolore natus possimus, vel cupiditate magnam hic? Consectetur dolor vero impedit natus!</p>
+            </Col>
+
+            <Col lg={4}>
+            <h3>Krishna Kashyap</h3> 
+            <p>jbhveadjbjkavhav</p>  
+            </Col>
+
+            
+            <Col lg={4}>
+            <h3>Piyush Harne</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos distinctio laboriosam architecto qui facilis maxime soluta hic nemo sed. Adipisci cumque animi maiores fugit? Molestias voluptates consequuntur iste natus quaerat.</p>
+            </Col>
+        </Row>
+    </Container>
+
+    </div>
     );
 }
