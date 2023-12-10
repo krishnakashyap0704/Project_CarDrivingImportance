@@ -96,7 +96,7 @@ export function DrivingSchoolRegistration(){
           <Form.Label>Contact Number</Form.Label>
           <Form.Control
             type="number"
-            placeholder="Enter conntact number"
+            placeholder="Enter your contact number"
             name="contact"
             value={formData.contact}
             onChange={handleChange}
@@ -129,7 +129,7 @@ export function DrivingSchoolRegistration(){
         </Form.Group>
 
         <Form.Group controlId='course' className="mb-2">
-          <Form.Label>Course</Form.Label>
+          <Form.Label>Gender</Form.Label>
           <Form.Check
             type="radio"
             label="Basic"

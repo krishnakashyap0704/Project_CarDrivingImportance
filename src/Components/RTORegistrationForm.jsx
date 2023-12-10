@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
 import { savePerson } from '../Services/LicenceService';
 
-const RTORegistrationForm = () => {
+export const RTORegistrationForm = () => {
   const [formData, setFormData] = useState({
     firstName:"",
     lastName:"",
@@ -191,4 +191,4 @@ const RTORegistrationForm = () => {
   );
 };
 
-export default RTORegistrationForm;
+

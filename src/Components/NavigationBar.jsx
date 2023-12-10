@@ -1,6 +1,6 @@
 import { Col, Container, Form, Nav, NavDropdown, Navbar, Row } from "react-bootstrap";
 
-import DS from "./Image/DS.png";
+import HTP from "./Image/HTP.png";
 import { LinkContainer } from "react-router-bootstrap";
 import './style.css'
 
@@ -12,10 +12,10 @@ export function NavigationBar() {
                 <Navbar.Brand href="#home">
                     <img
                         alt=""
-                        src={DS}
-                        width="70"
-                        height="60"
-                        className="d-inline-block align-top"
+                        src={HTP}
+                        width="200"
+                        height="100"
+                        className="d-inline-block align-top class3"
                     />{' '}</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

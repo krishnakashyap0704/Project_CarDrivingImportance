@@ -2,7 +2,7 @@ import { MDBFooter, MDBContainer, MDBCol, MDBRow,} from "mdb-react-ui-kit";
 
 export function Footer() {
     return (
-        <MDBFooter className='bg-secondary text-white text-center text-md-start '>
+        <MDBFooter className='bg-secondary text-white text-center text-md-start class5 '>
             <MDBContainer className='p-4' >
                 <MDBRow>
                     <MDBCol lg="6" md="12" className='mb-4 mb-md-0'>

@@ -12,8 +12,8 @@ export function DrivingSchoolCourses() {
     return (
 
         <div className="mt-4 mb-4">
-            <h4 className="text-center class1">CHOOSE YOUR COURSE TO DRIVE WITH CONFIDENCE ON THE ROAD</h4>
-            <p className="text-center mb-4">Our meticulously designed courses help transform beginners into skilled and confident drivers. Choose your desired course from a range of driving training courses and master the skill of driving</p>
+            <h4 className="text-center class3"><i>CHOOSE YOUR COURSE TO DRIVE WITH CONFIDENCE ON THE ROAD</i></h4>
+            <p className="text-center">Our meticulously designed courses help transform beginners into skilled and confident drivers. Choose your desired course from a range of driving training courses and master the skill of driving</p>
             <Container>
      
                 <Row className="justify-content-md-center">
@@ -30,7 +30,7 @@ export function DrivingSchoolCourses() {
                                
                                     <div>Fees : Rs.5500</div>
                                     
-                                <Button variant="primary" className='mt-3' href='/DrivingSchoolRegistration'>Enroll Now</Button>
+                                <Button variant="primary" className='mt-3' href='/DrivingSchoolCollection'>Enroll Now</Button>
 
 
 
@@ -49,7 +49,7 @@ export function DrivingSchoolCourses() {
                                 <div>Number of Hours   : 16</div>
                                 <div>Fees : Rs.9000</div>
                                 
-                                <Button variant="primary"  className='mt-3' href='/DrivingSchoolRegistration'>Enroll Now</Button>
+                                <Button variant="primary"  className='mt-3' href='/DrivingSchoolCollection'>Enroll Now</Button>
                                
                             </Card.Body>
                         </Card>
@@ -66,7 +66,7 @@ export function DrivingSchoolCourses() {
                                 <div>Number of Hours    : 12</div>
                                 <div>Fees : Rs.7500</div>
 
-                                <Button variant="primary"  className='mt-3' href='/DrivingSchoolRegistration'>Enroll Now</Button>
+                                <Button variant="primary"  className='mt-3' href='/DrivingSchoolCollection'>Enroll Now</Button>
                             </Card.Body>
                         </Card>
                     </Col>
