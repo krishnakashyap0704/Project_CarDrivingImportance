@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Form, Button } from 'react-bootstrap';
-import { saveStudent } from '../Services/DrivindSchoolServices';
+import { saveStudent } from '../Services/DrivingSchoolServices';
 
 export function DrivingSchoolRegistration(){
     const [formData, setFormData] = useState({
@@ -96,7 +96,7 @@ export function DrivingSchoolRegistration(){
           <Form.Label>Contact Number</Form.Label>
           <Form.Control
             type="number"
-            placeholder="Enter conntact number"
+            placeholder="Enter your contact number"
             name="contact"
             value={formData.contact}
             onChange={handleChange}

@@ -3,10 +3,10 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import drivinglesson from "./Image/drivinglesson.jpg";
-import donot from "./Image/donot.jpg";
-import learner from "./Image/learner.jpg";
-import interDS from "./Image/interDS.png";
+import card1 from './Image/card1.png'
+import card2 from './Image/card2.jpg'
+import card3 from './Image/card3.png'
+import card4 from './Image/card4.png'
 
 
 export function Cards() {
@@ -20,24 +20,24 @@ export function Cards() {
                 <Row className="justify-content-md-center">
                     <Col lg={3}>
                         <Card style={{ width: '18rem', height:'30rem' }}>
-                            <Card.Img  src={drivinglesson} width="100" height="180"/>
+                            <Card.Img  src={card1} width="100" height="180"/>
                             <Card.Body>
                                 <Card.Title>DON'T SKIP THESE DRIVING TIPS</Card.Title>
                                 <Card.Text>
-                               10 Practices that make you a safer Driver
-                               </Card.Text>
-                               <p>Although the 2020 lockdown resulted in a 49.47% fall in the number of lives lost in road accidents</p>
-                               {/* <Button variant="primary">More</Button> */}
+                                    10 Practices that make you a safer Driver
+                                </Card.Text>
+                                <p>Although the 2020 lockdown resulted in a 49.47% fall in the number of lives lost in road accidents</p>
+                                {/* <Button variant="primary">More</Button> */}
                             </Card.Body>
                         </Card>
                     </Col>
                     <Col lg={3}>
                         <Card style={{ width: '18rem', height:'30rem' }}>
-                            <Card.Img src={donot} width="100" height="180"/>
+                            <Card.Img src={card2} width="100" height="180"/>
                             <Card.Body>
                                 <Card.Title>IT'S TIME TO ERASE COMMON DRIVING MISTAKES</Card.Title>
                                 <Card.Text>
-                                Mistakes that most people make while driving
+                                    Mistakes that most people make while driving
                                 </Card.Text>
                                 <p>We must admit that each and every one of us is guilty of making errors while driving.</p>
                                 {/* <Button variant="primary">More</Button> */}
@@ -46,11 +46,11 @@ export function Cards() {
                     </Col>
                     <Col lg={3}>
                         <Card style={{ width: '18rem', height:'30rem' }}>
-                        <Card.Img src={interDS} width="100" height="180"/>
+                        <Card.Img src={card3} width="100" height="180"/>
                             <Card.Body>
                                 <Card.Title>LEARN HOW TO HOLD A INTERNATIONAL DRIVING LICENSE</Card.Title>
                                 <Card.Text>
-                                International Driving License: Here's What You Need to Know
+                                    International Driving License: Here's What You Need to Know
                                 </Card.Text>
                                 <p>Whether for travelling and exploring or work purposes, there may be times when you have to get behind the wheel in a foriegn country.</p>
                                 {/* <Button variant="primary">More</Button> */}
@@ -59,11 +59,11 @@ export function Cards() {
                     </Col>
                     <Col lg={3}>
                         <Card style={{ width: '18rem', height:'30rem' }}>
-                        <Card.Img src={learner} width="100" height="180"/>
+                        <Card.Img src={card4} width="100" height="180"/>
                             <Card.Body>
                                 <Card.Title>MOCK LEARNER LICENSE TEST</Card.Title>
                                 <Card.Text>
-                                Explore the plethora of Questions in Learner License
+                                    Explore the plethora of Questions in Learner License
                                 </Card.Text>
                                 <p>To 'Clear' the learners license test you must know the traffic signs and traffic rules  </p>
                                 {/* <Button variant="primary">More</Button> */}

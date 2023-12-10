@@ -15,7 +15,7 @@ export function MyCarousel() {
         <Carousel.Item>
                 <img
                     className="d-block mx-auto" // Center the image
-                    style={{maxHeight : '500px' }}
+                    style={{height : '500px', width :'1200px'}}
                     src={carousel1}
                     alt="First slide"
                 />
@@ -25,7 +25,7 @@ export function MyCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block mx-auto" // Center the image
-                    style={{maxHeight : '500px' }}
+                    style={{height : '500px', width :'1200px' }}
                     src={carousel2}
                     alt="Second slide"
                 />
@@ -34,7 +34,7 @@ export function MyCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block mx-auto" // Center the image
-                    style={{maxHeight : '500px' }}
+                    style={{height : '500px', width :'1200px' }}
                     src={carousel3}
                     alt="Third slide"
                 />
@@ -43,7 +43,7 @@ export function MyCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block mx-auto" // Center the image
-                    style={{maxHeight : '500px' }}
+                    style={{height : '500px',width :'1200px' }}
                     src={carousel4}
                     alt="Fourth slide"
                 />
@@ -52,7 +52,7 @@ export function MyCarousel() {
             <Carousel.Item>
                 <img
                     className="d-block mx-auto" // Center the image
-                    style={{maxHeight : '500px' }}
+                    style={{height : '500px',width :'1200px' }}
                     src={carousel5}
                     alt="Fifth slide"
                 />
