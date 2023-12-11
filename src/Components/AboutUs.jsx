@@ -15,6 +15,7 @@ export function AboutUs() {
                         <Card.Body>
                             <Card.Title>Tejaswini Maskare</Card.Title>
                             <div>Email : tejumaskare2001@gmail.com</div>
+                            <div href="https://www.linkedin.com/in/tejaswinimaskare/">TejaswiniLinkedin</div>
                             <div>Phone : 9021399249</div>
                         </Card.Body>
                     </Card>
@@ -25,6 +26,7 @@ export function AboutUs() {
                         <Card.Body>
                             <Card.Title>Krishna Kashyap</Card.Title>
                             <div>Email : kashyapanish11@gmail.com</div>
+                            <div href="https://rb.gy/67e4la">KrishnaLinkedin</div>
                             <div>Phone : 7389304143</div>
                         </Card.Body>
                     </Card>
@@ -35,6 +37,7 @@ export function AboutUs() {
                         <Card.Body>
                             <Card.Title>Piyush Harne</Card.Title>
                             <div>Email : piyushharne26@gmail.com</div>
+                            <div href="https://www.linkedin.com/in/piyush-harne-040088270/">PiyushLinkedin</div>
                             <div>Phone : 8408855958</div>
                         </Card.Body>
                     </Card>

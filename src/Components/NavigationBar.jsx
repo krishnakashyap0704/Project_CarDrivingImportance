@@ -70,9 +70,8 @@ export function NavigationBar() {
                             <LinkContainer to="/Login"><NavDropdown.Item >Sign In</NavDropdown.Item></LinkContainer>
                             <NavDropdown.Item href="/Register">Register</NavDropdown.Item>
                             <NavDropdown.Item href="/SupportForm">Support</NavDropdown.Item>
-                        </NavDropdown><br />
-                        <Button variant="success" onClick={handleLogout}>Log Out</Button>
-                        <Form inline>
+                        </NavDropdown>
+                        <Form >
                             <Row>
                                 <Col xs="auto">
                                     <Form.Control
@@ -83,6 +82,7 @@ export function NavigationBar() {
                                 </Col>
                             </Row>
                         </Form>
+                        <Button onClick={handleLogout}>{' '}Log Out</Button>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
