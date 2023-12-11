@@ -37,7 +37,7 @@ export function VehicleDetails() {
                 </Form>
             </Col>
             <Col lg-6>
-                {data && (
+                {data && (              //conditional Rendering
                     <Table>
                         <thead>
                             <tr>
