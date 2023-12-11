@@ -2,6 +2,7 @@ import { Card, Col, Container, Row } from "react-bootstrap";
 import About1 from "./Image/About1.jpg";
 import About2 from "./Image/About2.jpg";
 import About3 from "./Image/About3.jpg";
+import { Link } from "react-router-dom";
 
 
 export function AboutUs() {
@@ -15,7 +16,7 @@ export function AboutUs() {
                         <Card.Body>
                             <Card.Title>Tejaswini Maskare</Card.Title>
                             <div>Email : tejumaskare2001@gmail.com</div>
-                            <div href="https://www.linkedin.com/in/tejaswinimaskare/">TejaswiniLinkedin</div>
+                            <Link to="https://www.linkedin.com/in/tejaswinimaskare/">TejaswiniLinkedin</Link>
                             <div>Phone : 9021399249</div>
                         </Card.Body>
                     </Card>
@@ -26,7 +27,7 @@ export function AboutUs() {
                         <Card.Body>
                             <Card.Title>Krishna Kashyap</Card.Title>
                             <div>Email : kashyapanish11@gmail.com</div>
-                            <div href="https://rb.gy/67e4la">KrishnaLinkedin</div>
+                            <Link to="https://rb.gy/67e4la">KrishnaLinkedin</Link>
                             <div>Phone : 7389304143</div>
                         </Card.Body>
                     </Card>
@@ -37,7 +38,7 @@ export function AboutUs() {
                         <Card.Body>
                             <Card.Title>Piyush Harne</Card.Title>
                             <div>Email : piyushharne26@gmail.com</div>
-                            <div href="https://www.linkedin.com/in/piyush-harne-040088270/">PiyushLinkedin</div>
+                            <Link to="https://www.linkedin.com/in/piyush-harne-040088270/">PiyushLinkedin</Link>
                             <div>Phone : 8408855958</div>
                         </Card.Body>
                     </Card>
