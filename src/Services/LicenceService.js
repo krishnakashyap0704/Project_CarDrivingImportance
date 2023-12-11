@@ -1,5 +1,5 @@
 import axios from "axios";
-// import { BASE_URL, PORT_NO } from "./ApiConstants";
+import { BASE_URL, PORT_No } from "./ApiConstants";
 
 export async function savePerson(formData){
     try{
@@ -9,3 +9,12 @@ export async function savePerson(formData){
         console.log(error);
     } 
 };
+
+export async function fetchDetails(vehicleNumber){
+    try{
+        const response =await axios.get(`${BASE_URL}${PORT_No}/LicenceDataCollection/${vehicleNumber}`);
+        return response;
+    }catch(error){
+        console.log(error);
+    }
+}

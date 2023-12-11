@@ -12,6 +12,9 @@ import { ContactUs } from './Components/ContactUs';
 import { AboutUs } from './Components/AboutUs';
 import { AboutLicencing } from './Components/AboutLicencing';
 import { AboutPermit } from './Components/AboutPermit';
+import { VehicleDetails } from './Components/VehicleDetails';
+import { SupportForm } from './Components/SupportForm';
+import { LicenceDetails } from './Components/LicenceDetails';
 
 
 function App() {
@@ -24,8 +27,11 @@ function App() {
       <Route path='/Register' element={<Register/>}></Route>
       <Route path='/ContactUs' element={<ContactUs/>}></Route>
       <Route path='/AboutUs' element={<AboutUs/>}></Route>
+      <Route path='/SupportForm' element={<SupportForm/>}></Route>
       <Route path='/AboutPermit' element={<AboutPermit/>}></Route>
       <Route path='/AboutLicencing' element={<AboutLicencing/>}></Route>
+      <Route path='/VehicleDetails' element={<VehicleDetails/>}></Route> 
+      <Route path='/LicenceDetails' element={<LicenceDetails/>}></Route>
       <Route path='/RTORegistrationForm' element={<RTORegistrationForm/>}></Route>
       <Route path='/DrivingSchoolRegistration' element={<DrivingSchoolRegistration/>}></Route>
     </Routes>

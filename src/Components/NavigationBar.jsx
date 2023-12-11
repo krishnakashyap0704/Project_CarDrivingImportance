@@ -1,10 +1,20 @@
-import { Col, Container, Form, Nav, NavDropdown, Navbar, Row } from "react-bootstrap";
-
+import { Button, Col, Container, Form, Nav, NavDropdown, Navbar, Row } from "react-bootstrap";
 import logo from "./Image/Logo.png";
 import { LinkContainer } from "react-router-bootstrap";
 import './style.css'
+import { Navigate } from "react-router-dom";
+import { logout } from "../utils/TokenUtil";
 
 export function NavigationBar() {
+    const handlesubmit=()=>
+    {
+      
+      logout();
+    
+      Navigate(`/`)
+
+    }
+
     return (
         
         <Navbar bg="dark" data-bs-theme="dark" expand="lg" className="bg-body-tertiary navbar1">
@@ -33,8 +43,8 @@ export function NavigationBar() {
                             <NavDropdown.Item href="#action/1.11">Vechile Fitness Testing</NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Informational Services" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/2.1">Know Your License Details</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/2.2">Know Your Vechile Details</NavDropdown.Item>
+                            <NavDropdown.Item href="/LicenceDetails">Know Your License Details</NavDropdown.Item>
+                            <NavDropdown.Item href="/VehicleDetails">Know Your Vechile Details</NavDropdown.Item>
                             <NavDropdown.Item href="/AboutLicencing">About Licencing</NavDropdown.Item>
                             <NavDropdown.Item href="/AboutPermit">About Permits</NavDropdown.Item>
                             <NavDropdown.Item href="#action/2.6">Act, Rules and Policies</NavDropdown.Item>
@@ -61,8 +71,9 @@ export function NavigationBar() {
                         <NavDropdown title="Login" id="basic-nav-dropdown">
                             <LinkContainer to="/Login"><NavDropdown.Item >Sign In</NavDropdown.Item></LinkContainer>
                             <NavDropdown.Item href="/Register">Register</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/5.3">Support</NavDropdown.Item>
-                        </NavDropdown>
+                            <NavDropdown.Item href="/SupportForm">Support</NavDropdown.Item>
+                        </NavDropdown><br />
+                        <Button variant="success" onClick={handlesubmit}>Log Out</Button><br />
                         <Form inline>
                             <Row>
                                 <Col xs="auto">
