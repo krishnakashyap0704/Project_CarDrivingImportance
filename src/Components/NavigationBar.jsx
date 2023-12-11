@@ -1,18 +1,16 @@
 import { Button, Col, Container, Form, Nav, NavDropdown, Navbar, Row } from "react-bootstrap";
 import logo from "./Image/Logo.png";
 import { LinkContainer } from "react-router-bootstrap";
-import './style.css'
-import { Navigate } from "react-router-dom";
+import './style.css';
 import { logout } from "../utils/TokenUtil";
+import { Navigate } from "react-router-dom";
 
 export function NavigationBar() {
-    const handlesubmit=()=>
-    {
-      
-      logout();
-    
-      Navigate(`/`)
 
+    const handleLogout=()=>
+    {
+      logout();
+      Navigate(`/`);
     }
 
     return (
@@ -73,7 +71,7 @@ export function NavigationBar() {
                             <NavDropdown.Item href="/Register">Register</NavDropdown.Item>
                             <NavDropdown.Item href="/SupportForm">Support</NavDropdown.Item>
                         </NavDropdown><br />
-                        <Button variant="success" onClick={handlesubmit}>Log Out</Button><br />
+                        <Button variant="success" onClick={handleLogout}>Log Out</Button>
                         <Form inline>
                             <Row>
                                 <Col xs="auto">

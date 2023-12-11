@@ -2,6 +2,7 @@ import { Button, Container, Form } from "react-bootstrap";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { LoginProfile } from "../Services/RegistrationApi";
+import { Alert } from "bootstrap";
 
 export function Login(){
     const navigate=useNavigate();
@@ -11,6 +12,7 @@ export function Login(){
     const handleChange=(e)=>{
         setFormData({...formData,[e.target.name]:e.target.value});
     }
+
     const handleSubmit=async(e)=>{
         e.preventDefault();
         try {
@@ -43,6 +45,7 @@ export function Login(){
                 </Button><br/><br/>
                 <h6>Don't have a account? <Link to="/Register">Register Now</Link></h6>
             </Form>
+            {loginError?<Alert variant="danger" className="mt-3">Invalid phone or password</Alert>:null}
         </Container>
     );
 }
