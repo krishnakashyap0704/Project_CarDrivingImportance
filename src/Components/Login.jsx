@@ -1,8 +1,7 @@
-import { Button, Container, Form } from "react-bootstrap";
+import { Button, Container, Form, Alert } from "react-bootstrap";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { LoginProfile } from "../Services/RegistrationApi";
-import { Alert } from "bootstrap";
 
 export function Login(){
     const navigate=useNavigate();
@@ -21,8 +20,10 @@ export function Login(){
           localStorage.setItem("token",result.token);
           navigate("/");
         } catch (error) {
-            console.log(error);
             setLoginError(true);
+            setTimeout(() => {
+                setLoginError(false);
+              }, 3000);
         }
     }
 
@@ -44,7 +45,7 @@ export function Login(){
                     Sign in
                 </Button><br/><br/>
                 <h6>Don't have a account? <Link to="/Register">Register Now</Link></h6>
-            </Form>
+                </Form>
             {loginError?<Alert variant="danger" className="mt-3">Invalid phone or password</Alert>:null}
         </Container>
     );
