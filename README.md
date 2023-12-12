@@ -1,4 +1,4 @@
-# Project_CarDrivingImportance
+## Project_CarDrivingImportance
 Mini Project related to car driving importance and RTO (Regional Transport Office) work using React.js. This could be an interesting project that involves creating a web application to provide information or services related to car driving and RTO processes.
 
 Below, I'll outline some components and features you might consider including in your mini project:
@@ -41,17 +41,23 @@ Include validation to ensure accurate and complete information.
 10. Responsive Design:
 -Ensure that the web application is responsive and works well on various devices, including desktops, tablets, and smartphones.
 
-Technology Stack:
+## Technology Stack:
 -Use React.js for the front-end development.
 -Employ a backend technology (Node.js, Django, Flask, etc.) to handle server-side logic and interact with a database.
 -Choose a database (MongoDB, PostgreSQL, MySQL) to store user information and application data.
 
-Additional Considerations:
+## Additional Considerations:
 -Implement secure practices for user data handling.
 -Use HTTPS for secure data transmission.
 -Consider incorporating a map API to provide location-based information.
 -Remember to plan your project thoroughly, create wireframes, and break down the development tasks into manageable steps. This will help you stay organized and ensure a smoother development process.
 
+Note: Before using this project please apply the following steps
+      Step 1 - Please install all the dependencies and modules using the command {npm i}.
+      Step 2 - Install libraries like ExpressJs for the server and Mongoose for the database. 
+      Step 3 - Download all the necessary software like MongoDB, and NodeJs.
+      Step 4 - Download the frontend file from another repository and repeat the above steps.
+      Step 5 - To start the server use the command {node index.js}
 
 
 
